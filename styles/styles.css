@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  line-height: 1;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Josefin Sans', sans-serif;
+}
+p, button{
+  font-family: 'Alata', sans-serif;
+}
+.hero-section{
+  background: url(/images/desktop/image-hero.jpg) no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.hero-section .container{
+  width: 70%;
+  margin: 0 auto;
+}
+.hero-section nav{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.hero-section nav ul{
+  display: flex;
+  gap: 15px;
+}
+.hero-section nav ul li{
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 0;
+}
+li:hover{
+  border-bottom: 1px solid #fff;
+}
+.hero-section .head h1{
+  font-size: 60px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 30px;
+  color: #fff;
+  width: 60%;
+  margin: 50px 0;
+  font-weight: 400; 
+}
+.section-one{
+  width: 70%; 
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  position: relative;
+}
+.section-one .img{
+  background: url(/images/desktop/image-interactive.jpg) no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 400px;
+}
+.section-one .leader-article{
+  position: absolute;
+  background-color: #fff;
+  padding: 40px 0 40px 60px;
+  width: 50%;
+  right: 0;
+  bottom: 40px;
+}
+.section-one .leader-article h2{
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  width: 70%;
+}
+.section-one .leader-article p{
+  line-height: 1.5;
+  width: 90%;
+  font-weight: 15px;
+  color:  hsl(0, 0%, 55%);
+}
+.creation-section{
+  width: 70%;
+  margin: 0 auto;
+}
+.creation-section .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.creation-section .head h2{
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.creation-section .head button{
+  border: 1px solid hsl(0, 0%, 55%);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.creation-section .head button:hover{
+  background-color: #000;
+  color: #fff;
+}
+.creation-section .creation-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 80px;
+}
+.card{
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  background: white;
+  transition: 0.5s;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+}
+.card p{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80%;
+  z-index: 50;
+}
+.card:hover{
+  color: #000;
+}
+.card:hover .hover{
+  display: flex;
+}
+.hover{
+  background-color: hsl(0, 0%, 100%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  display: none;
+  position: absolute;
+  z-index: 20;
+  transition: 0.5s;
+}
+footer{
+  background-color: black;
+}
+footer .top{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+footer .top .socials-container{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .bottom{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer .bottom ul{
+  display: flex;
+  gap: 20px;
+  
+}
+footer .bottom ul li{
+  color: #fff;
+  padding: 5px 0;
+  cursor: pointer;
+}
+footer .bottom p{
+  color: hsl(0, 0%, 55%);
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  background-color: rgb(0, 0, 0); 
+  color: hsl(0, 0%, 100%); 
+  padding: 20px;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%); 
+}
